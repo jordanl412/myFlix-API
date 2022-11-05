@@ -7,4 +7,6 @@ This API provides users access to information about different movies, directors,
 ## Project Dependencies
  - HTML
  - Javascript
+ - Express
+ - Body-parser
  
