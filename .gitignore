@@ -1,0 +1,2 @@
+#ignores node_modules folder for commits
+node_modules/
