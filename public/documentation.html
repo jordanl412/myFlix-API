@@ -13,6 +13,111 @@
     personal information, and create a list of their favorite 
     movies on myFlix.
     </p>
+
+<div>
+    <table>
+        <tr>
+            <th>Business Logic</th>
+            <th>Endpoint URL</th>
+            <th>HTTP Method</th>
+            <th>Query Parameters</th>
+            <th>Request body data format</th>
+            <th>Response body data format</th> 
+        </tr>
+        <tr>
+            <td>Get a list of all movies</td>
+            <td>/movies</td>
+            <td>GET</td>
+            <td>none</td>
+            <td>none</td>
+            <td>A JSON object holding a list of all movies</td>
+        </tr>
+        <tr>
+            <td>Get data about a single movie by title</td>
+            <td>/movies/:title</td>
+            <td>GET</td>
+            <td>title</td>
+            <td>none</td>
+            <td>A JSON object holding data (description, genre, director, 
+                image URL, featured or not) about a specific movie title</td>
+        </tr>
+        <tr>
+            <td>Get data about a genre by name/title 
+                (e.g., "Thriller")</td>
+            <td>/movies/genre/:genreName</td>
+            <td>GET</td>
+            <td>genreName</td>
+            <td>none</td>
+            <td>A JSON object holding a description of the genre of 
+                a specific movie</td>
+        </tr>
+        <tr>
+            <td>Get data about a director by name</td>
+            <td>/movies/directors/:directorName</td>
+            <td>GET</td>
+            <td>directorName</td>
+            <td>none</td>
+            <td>A JSON object holding data (bio, birth year, death year) of 
+                a specific director</td>
+        </tr>
+        <tr>
+            <td>Add a user</td>
+            <td>/users</td>
+            <td>POST</td>
+            <td>none</td>
+            <td>A JSON object holding data about the user to add, structured like: 
+                {
+                "name": "Jordan",
+                "favoriteMovies": []
+                }
+            </td>
+            <td>A JSON object holding data about the user that was added</td>
+        </tr>
+        <tr>
+            <td>Update a user's info (username)</td>
+            <td>/users/:id</td>
+            <td>PUT</td>
+            <td>id</td>
+            <td>A JSON object holding data about the user's updated info, structured like: 
+                {
+                    "name": "Jordan Updated Name",
+                    "favoriteMovies": []
+                    }
+            </td>
+            <td>A JSON object holding data about the updated user</td>
+        </tr>
+        <tr>
+            <td>Add a movie to user's list of favorites (showing only 
+                a text that a movie has been added)</td>
+            <td>/users/:id/:movieTitle</td>
+            <td>POST</td>
+            <td>id, movieTitle</td>
+            <td>none</td>
+            <td>A text message indicating whether the movie was successfully 
+                added</td>
+        </tr>
+        <tr>
+            <td>Remove a movie from user's list of favorites 
+                (showing only a text that a movie has been added)</td>
+            <td>/users/:id/:movieTitle</td>
+            <td>DELETE</td>
+            <td>id, movieTitle</td>
+            <td>none</td>
+            <td>A text message indicating whether the movie was successfully 
+                removed</td>
+        </tr>
+        <tr>
+            <td>Remove a user (showing only a text 
+                that a user email has been removed)</td>
+            <td>/users/:id</td>
+            <td>DELETE</td>
+            <td>id</td>
+            <td>none</td>
+            <td>A text message indicating whether the user was successfully 
+                removed</td>
+        </tr>
+    </table>
+</div>    
 </body>
 
 </html>
