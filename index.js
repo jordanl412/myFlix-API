@@ -109,18 +109,18 @@ let movies = [
         },
     },
     {
-        title: 'Get Out',
-        description: 'The plot follows a young black man (Kaluuya), who uncovers shocking secrets when he meets the family of his white girlfriend (Williams).',
+        title: 'My Sister\'s Keeper',
+        description: 'Conceived as a marrow donor for her gravely ill sister, Anna Fitzgerald (Abigail Breslin) has undergone countless surgeries and medical procedures in her short life. Though their older daughter\'s life has no doubt been prolonged, the unorthodox decision of Anna\'s parents has cracked the entire family\'s foundation. When Anna sues her parents for emancipation, it sets off a court case that threatens to destroy the family for good.',
         genre: {
-            name: 'Psychological Horror',
-            description: 'Psychological horror is a subgenre of horror and psychological fiction with a particular focus on mental, emotional, and psychological states to frighten, disturb, or unsettle its audience.'
+            name: 'Drama',
+            description: 'The drama genre features stories with high stakes and many conflicts. They\'re plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters.'
         },
         imageURL: 'https://en.wikipedia.org/wiki/Get_Out#/media/File:Get_Out_poster.png',
         director: {
-            name: 'Jordan Peele',
-            birthYear: '1979',
+            name: 'Nick Cassavetes',
+            birthYear: '1959',
             deathYear: '',
-            bio: 'Jordan Haworth Peele is an American actor, comedian, and filmmaker. He is best known for his film and television work in the comedy and horror genres.'
+            bio: 'Nicholas David Rowland Cassavetes is an American actor, director, and writer. He has directed such films as She\'s So Lovely, John Q., The Notebook, Alpha Dog, and My Sister\'s Keeper.'
         },
     },
     {
