@@ -25,7 +25,7 @@ let movies = [
             name: 'Science Fiction',
             description: 'Science Fiction is a fictionalized story wherein the setting and plot are centered around technology, time travel, outer space, or scientific principles, with or without the presence of aliens. Story elements are not found in the known universe and explained by scientific means.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Interstellar_(film)#/media/File:Interstellar_film_poster.jpg',
+        imageURL: 'Interstellar.jpeg',
         director: {
             name: 'Christopher Nolan',
             birthYear: '1970',
@@ -40,7 +40,7 @@ let movies = [
             name: 'Musical Drama',
             description: 'Musical film is a film genre in which songs by the characters are interwoven into the narrative, sometimes accompanied by dancing. The songs usually advance the plot or develop the film\'s characters, but in some cases, they serve merely as breaks in the storyline, often as elaborate "production numbers".'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Burlesque_(2010_American_film)#/media/File:Burlesque_poster.jpg',
+        imageURL: 'Burlesque.jpeg',
         director: {
             name: 'Steven Antin',
             birthYear: '1958',
@@ -55,7 +55,7 @@ let movies = [
             name: 'Romantic Drama',
             description: 'Romantic Drama film is a genre that explores the complex side of love. The plot usually centers around an obstacle that is preventing love between two people. The obstacles in Romantic Drama film can range from a family\'s disapproval, to forbidden love, to one\'s own psychological restraints.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/The_Notebook#/media/File:Posternotebook.jpg',
+        imageURL: 'TheNotebook.jpeg',
         director: {
             name: 'Nick Cassavetes',
             birthYear: '1959',
@@ -70,7 +70,7 @@ let movies = [
             name: 'Musical Drama',
             description: 'Musical film is a film genre in which songs by the characters are interwoven into the narrative, sometimes accompanied by dancing. The songs usually advance the plot or develop the film\'s characters, but in some cases, they serve merely as breaks in the storyline, often as elaborate "production numbers".'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/La_La_Land#/media/File:La_La_Land_(film).png',
+        imageURL: 'LaLaLand.jpeg',
         director: {
             name: 'Damien Chazelle',
             birthYear: '1985',
@@ -85,10 +85,10 @@ let movies = [
             name: 'Romantic Comedy',
             description: 'Romantic comedy (also known as romcom or rom-com) is a subgenre of comedy and slice of life fiction, focusing on lighthearted, humorous plot lines centered on romantic ideas, such as how true love is able to surmount most obstacles.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Crazy,_Stupid,_Love#/media/File:CrazyStupidLovePoster.jpg',
+        imageURL: 'CrazyStupidLove.jpeg',
         director: {
-            name: 'Glenn Ficarra & John Requa',
-            birthYear: '1969 and 1967, respectively',
+            name: 'John Requa',
+            birthYear: '1967',
             deathYear: '',
             bio: 'John Requa (born January 1, 1967) is an American screenwriter (with Glenn Ficarra) of Cats & Dogs, Bad Santa and the 2005 remake Bad News Bears.'
         },
@@ -100,7 +100,7 @@ let movies = [
             name: 'Romantic Comedy',
             description: 'Romantic comedy (also known as romcom or rom-com) is a subgenre of comedy and slice of life fiction, focusing on lighthearted, humorous plot lines centered on romantic ideas, such as how true love is able to surmount most obstacles.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Bridesmaids_(2011_film)#/media/File:BridesmaidsPoster.jpg',
+        imageURL: 'Bridesmaids.jpeg',
         director: {
             name: 'Paul Feig',
             birthYear: '1962',
@@ -115,7 +115,7 @@ let movies = [
             name: 'Drama',
             description: 'The drama genre features stories with high stakes and many conflicts. They\'re plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Get_Out#/media/File:Get_Out_poster.png',
+        imageURL: 'MySistersKeeper.jpeg',
         director: {
             name: 'Nick Cassavetes',
             birthYear: '1959',
@@ -130,7 +130,7 @@ let movies = [
             name: 'Romantic Drama',
             description: 'Romantic Drama film is a genre that explores the complex side of love. The plot usually centers around an obstacle that is preventing love between two people. The obstacles in Romantic Drama film can range from a family\'s disapproval, to forbidden love, to one\'s own psychological restraints.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Me_Before_You_(film)#/media/File:Me_Before_You_(film).jpg',
+        imageURL: 'MeBeforeYou.jpeg',
         director: {
             name: 'Thea Sharrock',
             birthYear: '1976',
@@ -145,7 +145,7 @@ let movies = [
             name: 'Action',
             description: 'Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Avengers:_Endgame#/media/File:Avengers_Endgame_poster.jpg',
+        imageURL: 'AvengersEndgame.jpeg',
         director: {
             name: 'Anothony Russo & Joe Russo',
             birthYear: '1970 and 1971, respectively',
@@ -160,7 +160,7 @@ let movies = [
             name: 'Dystopian',
             description: 'The dystopian genre imagines worlds or societies where life is extremely bad because of deprivation or oppression or terror, and human society is characterized by human misery, such as squalor, oppression, disease, overcrowding, environmental destruction, or war.'
         },
-        imageURL: 'https://en.wikipedia.org/wiki/Divergent_(film)#/media/File:Divergent.jpg',
+        imageURL: 'Divergent.jpeg',
         director: {
             name: 'Neil Burger',
             birthYear: '1963',
