@@ -1,4 +1,5 @@
 let express = require('express');
+const { default: mongoose } = require('mongoose');
     morgan = require('morgan');
     bodyParser = require('body-parser');
     uuid = require('uuid');
@@ -8,6 +9,10 @@ let app = express();
 
 let Movies = Models.Movie;
 let Users = Models.User;
+
+mongoose.connect('mongodb://localhost:27017/myFlixDB', {
+    useNewUrlParser: true, useUnifiedTopology: true
+});
 
 let users = [
     {
