@@ -2,7 +2,12 @@ let express = require('express');
     morgan = require('morgan');
     bodyParser = require('body-parser');
     uuid = require('uuid');
+    mongoose = require('mongoose');
+    Models = require('./models.js');
 let app = express();
+
+let Movies = Models.Movie;
+let Users = Models.User;
 
 let users = [
     {
