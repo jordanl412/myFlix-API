@@ -33,23 +33,23 @@
             <td>A JSON object holding a list of all movies</td>
         </tr>
         <tr>
-            <td>Get data about a single movie by title</td>
-            <td>/movies/:title</td>
+            <td>Get data about a movie by title</td>
+            <td>/movies/:Title</td>
             <td>GET</td>
-            <td>title</td>
+            <td>Title</td>
             <td>none</td>
             <td>A JSON object holding data (title, description, genre, director, 
-                image URL, featured or not) about a specific movie title</td>
+                image URL, featured or not) about the specified movie title</td>
         </tr>
         <tr>
-            <td>Get data about a genre by name/title 
+            <td>Get data about a genre by name
                 (e.g., "Thriller")</td>
-            <td>/movies/genre/:genreName</td>
+            <td>/movies/genres/:genreName</td>
             <td>GET</td>
             <td>genreName</td>
             <td>none</td>
-            <td>A JSON object holding a description of the genre of 
-                a specific movie</td>
+            <td>A JSON object holding the name and description of the specified 
+                genre</td>
         </tr>
         <tr>
             <td>Get data about a director by name</td>
@@ -58,63 +58,81 @@
             <td>directorName</td>
             <td>none</td>
             <td>A JSON object holding data (name, bio, birth year, death year) of 
-                a specific director</td>
+                the specified director</td>
         </tr>
         <tr>
-            <td>Add a user</td>
+            <td>Get a list of all users</td>
+            <td>/users</td>
+            <td>GET</td>
+            <td>none</td>
+            <td>none</td>
+            <td>A JSON object holding a list of all users</td>
+        </tr>
+        <tr>
+            <td>Get a user by Username</td>
+            <td>/users/:Username</td>
+            <td>GET</td>
+            <td>Username</td>
+            <td>none</td>
+            <td>A JSON object of the specified user</td>
+        </tr>
+        <tr>
+            <td>Add a new user</td>
             <td>/users</td>
             <td>POST</td>
             <td>none</td>
             <td>A JSON object holding data about the user to add, structured like: 
                 {
-                "name": "Jordan",
-                "favoriteMovies": []
+                "Username": "Jordan",
+                "Password": "5678",
+                "Email": "jordanlazan@yahoo.com",
+                "Birthday": "1996-04-12"
+                "FavoriteMovies": []
                 }
             </td>
-            <td>A JSON object holding data about the user that was added</td>
+            <td>A JSON object holding data about the user that was added, 
+                or a message that the user already exists</td>
         </tr>
         <tr>
-            <td>Update a user's info (username)</td>
-            <td>/users/:id</td>
+            <td>Update a user's info</td>
+            <td>/users/:Username</td>
             <td>PUT</td>
-            <td>id</td>
+            <td>Username</td>
             <td>A JSON object holding data about the user's updated info, structured like: 
                 {
-                    "name": "Jordan Updated Name",
-                    "favoriteMovies": []
+                    "Username": "JordanLazan",
+                    "Password": "5678",
+                    "Email": "jordanlazan@yahoo.com",
+                    "Birthday": "1996-04-12"
+                    "FavoriteMovies": []
                     }
             </td>
             <td>A JSON object holding data about the updated user</td>
         </tr>
         <tr>
-            <td>Add a movie to user's list of favorites (showing only 
-                a text that a movie has been added)</td>
-            <td>/users/:id/:movieTitle</td>
+            <td>Add a movie to user's list of favorites</td>
+            <td>/users/:Username/movies/:MovieID</td>
             <td>POST</td>
-            <td>id, movieTitle</td>
+            <td>Username, MovieID</td>
             <td>none</td>
-            <td>A text message indicating whether the movie was successfully 
-                added</td>
+            <td>A JSON object of the updated user</td>
         </tr>
         <tr>
-            <td>Remove a movie from user's list of favorites 
-                (showing only a text that a movie has been added)</td>
-            <td>/users/:id/:movieTitle</td>
+            <td>Remove a movie from user's list of favorites</td>
+            <td>/users/:Username/movies/:MovieID</td>
             <td>DELETE</td>
-            <td>id, movieTitle</td>
+            <td>Username, movieID</td>
             <td>none</td>
-            <td>A text message indicating whether the movie was successfully 
-                removed</td>
+            <td>A JSON object of the updated user</td>
         </tr>
         <tr>
-            <td>Remove a user (showing only a text 
-                that a user email has been removed)</td>
-            <td>/users/:id</td>
+            <td>Remove a user</td>
+            <td>/users/:Username</td>
             <td>DELETE</td>
-            <td>id</td>
+            <td>Username</td>
             <td>none</td>
-            <td>A text message indicating whether the user was successfully 
-                removed</td>
+            <td>A text message indicating that the user was successfully deleted, 
+                or that the user was not found</td>
         </tr>
     </table>
 </div>    
