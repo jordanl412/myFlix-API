@@ -23,4 +23,8 @@ Using Mongoose request methods and endpoints, users can use this API to:
  - Morgan
  - uuid
  - Mongoose
+ - Passport
+ - Passport-jwt
+ - Passport-local
+ - jsonwebtoken
  
