@@ -9,6 +9,7 @@ const app = express();
 
 let Movies = Models.Movie;
 let Users = Models.User;
+let allowedOrigins = ['http://localhost:8080', 'http://localhost:1234'];
 
 const { check, validationResult } = require('express-validator');
 
