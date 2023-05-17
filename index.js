@@ -9,7 +9,7 @@ const app = express();
 
 let Movies = Models.Movie;
 let Users = Models.User;
-let allowedOrigins = ['http://localhost:8080', 'http://localhost:4200', 'http://localhost:1234', 'https://jordan-myflix-app.netlify.app'];
+let allowedOrigins = ['http://localhost:8080', 'http://localhost:4200', 'http://localhost:1234', 'https://jordan-myflix-app.netlify.app', 'https://jordanl412.github.io'];
 
 const { check, validationResult } = require('express-validator');
 
